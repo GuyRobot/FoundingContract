@@ -33,7 +33,7 @@ contract Founding {
 
         // Check constraint
         require(
-            campaign.deadline < block.timestamp,
+            _deadline > block.timestamp,
             "The deadline should be a date in the future"
         );
 
