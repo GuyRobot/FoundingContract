@@ -34,7 +34,7 @@ contract Founding {
         // Check constraint
         require(
             _deadline > block.timestamp,
-            "The deadline should be a date in the future"
+            "Deadline should be in the future"
         );
 
         campaign.owner = _owner;
